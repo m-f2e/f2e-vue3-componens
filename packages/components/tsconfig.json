@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"target": "ES5",
+		"module": "esnext",
+		"isolatedModules": false,
+		"strict": true,
+		"jsx": "preserve",
+		"baseUrl": ".",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "lib": ["esnext", "dom"]
+	},
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "src/**/*.jsx", "src/**/*.vue"],
+  "exclude": ["node_modules"]
+}

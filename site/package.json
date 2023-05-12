@@ -1,0 +1,19 @@
+{
+  "name": "@m-f2e/site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/client": "2.0.0-beta.61",
+    "@yanyu-fe/vuepress-plugin-code-block": "^0.2.2",
+    "vue": "^3.3.1",
+    "vuepress": "2.0.0-beta.61"
+  }
+}

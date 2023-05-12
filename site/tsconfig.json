@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"useDefineForClassFields": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"isolatedModules": true,
+		"strict": true,
+		"jsx": "preserve",
+		"sourceMap": true,
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+		"skipLibCheck": true,
+		"baseUrl": ".",
+		"paths": {
+			"@m-f2e/vue3-ui": ["../packages/components/src/index.ts"],
+			"@m-f2e/vue3-ui/style": ["../packages/components/src/style.ts"]
+		}
+	},
+  "include": ["components/**/*.vue", "components/**/*.tsx", "components/**/*.jsx"],
+  "exclude": ["node_modules"]
+}
