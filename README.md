@@ -1,3 +1,22 @@
+## 技术栈
+  - vue3
+  - jsx
+  - vite
+  - vuepress
+  - unbuild
+  - vitest
+  - typescript
+
+## 工程结构
+由pnpm `workspace` 管理的
+```js
+  -example // 测试demo
+  -packages
+    -components // UI组件库
+    -utils // 工具库
+  -site // UI组件站点
+```
+
 ## 发包
 发布需要使用pnpm, pnpm7之后提供了`-F`（--filter的简写）
 ```js
