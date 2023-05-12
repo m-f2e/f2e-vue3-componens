@@ -19,6 +19,7 @@ jobs:
       - run: pnpm build:site
       - uses: crazy-max/ghaction-github-pages@v2
         with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           target_branch: gh-pages
           build_dir: site/.vuepress/dist
         env:
