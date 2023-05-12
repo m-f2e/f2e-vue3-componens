@@ -28,3 +28,9 @@
 ```js
   pnpm up -r 
 ```
+
+## 发布站点
+```js
+ 提交完代码后，提交tag 
+ git tag site@v0.0.1-beta.1
+```
