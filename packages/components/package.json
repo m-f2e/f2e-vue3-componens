@@ -8,12 +8,12 @@
   "scripts": {
     "genColor": "esno scripts/genColor.ts",
     "build:less": "esno scripts/bundleLess.ts",
-    "build:comp": "vite build",
+    "build:comp": "rm -rf es && rm -rf lib && vite build",
     "build:style": "vite build --config vite.config.style.ts",
     "build-tips": "------------------------------------------",
     "bundle": "vite build --config vite.config.bundle.ts",
     "bundleLess": "vite build --config vite.config.bundle.style.ts",
-    "bundleMin": "pnpm bundleLess && pnpm bundle",
+    "bundleMin": "rm -rf dist && pnpm bundleLess && pnpm bundle",
     "bundle-tips": "-----------------------------------------",
     "build": "pnpm build:comp && pnpm genColor && pnpm build:less && pnpm build:style && pnpm bundleMin",
     "test": "echo \"Error: no test specified\" && exit 1"
