@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import fg from 'fast-glob'
 
+// 遍历所有组件的样色
 const files = fg.sync('**/style/index.ts', {
   cwd: process.cwd(),
   onlyFiles: true,
@@ -28,7 +29,7 @@ export default defineConfig({
         }
         return false
       },
-			input: [...files, 'src/style.ts'],
+			input: files,
 			output: [
 				{
 					format: 'es',
