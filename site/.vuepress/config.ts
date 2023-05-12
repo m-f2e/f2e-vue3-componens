@@ -9,7 +9,7 @@ export default defineUserConfig({
   lang: 'zh-CN',
 	title: '前端组件库',
   description: '这是我的第一个 VuePress 站点',
-	base: process.env.NODE_ENV === 'production' ? '/' : '/',
+	base: process.env.NODE_ENV === 'production' ? '/f2e-vue3-componens/' : '/',
 	plugins: [codeBlockPlugin()],
 	locales: {
     '/': {
