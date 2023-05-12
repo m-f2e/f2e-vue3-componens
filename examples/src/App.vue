@@ -9,8 +9,9 @@
 </template>
 
 <script lang="ts" setup>
-  import { MButton, MSelect, MInput } from '@m-f2e/vue3-ui/src/index.ts';
-  import '@m-f2e/vue3-ui/src/style.ts'
+  // 按需引入
+  import { MButton, MSelect, MInput } from '@m-f2e/vue3-ui';
+  import '@m-f2e/vue3-ui/es/button/style/index.css'
 </script>
 
 <style lang="less" scoped>

@@ -28,7 +28,7 @@ export default defineConfig({
         }
         return false
       },
-			input: files,
+			input: [...files, 'src/style.ts'],
 			output: [
 				{
 					format: 'es',
