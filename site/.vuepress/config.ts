@@ -24,11 +24,13 @@ export default defineUserConfig({
 	theme: defaultTheme({
 		locales: {
 			'/': {
+	selectLanguageText: '语言',
         selectLanguageName: '简体中文',
 				navbar: navbar.zh,
 				sidebar: sidebar.zh,
 			},
       '/en/': {
+	selectLanguageText: 'Languages',
         selectLanguageName: 'English',
         navbar: navbar.en,
 				sidebar: sidebar.en,
