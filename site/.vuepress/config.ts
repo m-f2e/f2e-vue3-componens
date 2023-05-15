@@ -9,7 +9,7 @@ export default defineUserConfig({
   lang: 'zh-CN',
 	title: '前端组件库',
   description: '这是我的第一个 VuePress 站点',
-	base: process.env.NODE_ENV === 'production' ? '/f2e-vue3-componens' : '/',
+	base: process.env.NODE_ENV === 'production' ? '/f2e-vue3-componens/' : '/',
 	plugins: [codeBlockPlugin()],
 	locales: {
     '/': {
@@ -24,13 +24,13 @@ export default defineUserConfig({
 	theme: defaultTheme({
 		locales: {
 			'/': {
-        selectLanguageText: '语言',
+	selectLanguageText: '语言',
         selectLanguageName: '简体中文',
 				navbar: navbar.zh,
 				sidebar: sidebar.zh,
 			},
       '/en/': {
-        selectLanguageText: 'Languages',
+	selectLanguageText: 'Languages',
         selectLanguageName: 'English',
         navbar: navbar.en,
 				sidebar: sidebar.en,
