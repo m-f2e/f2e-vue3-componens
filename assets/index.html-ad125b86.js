@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-47357bdb","path":"/zh/guide/","title":"页面的标题","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"页面的标题","description":"页面的描述"},"headers":[],"git":{"updatedTime":1688036111000,"contributors":[{"name":"zhouwei","email":"zhouwei1@cheyipai.com","commits":1}]},"filePathRelative":"zh/guide/README.md"}');export{e as data};
