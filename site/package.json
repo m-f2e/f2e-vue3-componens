@@ -11,10 +11,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@vuepress/client": "2.0.0-beta.61",
+    "@vuepress/client": "2.0.0-beta.63",
     "@yanyu-fe/vuepress-plugin-code-block": "^0.2.2",
-    "vue": "^3.3.1",
-    "vuepress": "2.0.0-beta.61"
+    "vue": "^3.3.4",
+    "vuepress": "2.0.0-beta.63"
   },
   "dependencies": {
     "@m-f2e/vue3-ui": "workspace:*"
