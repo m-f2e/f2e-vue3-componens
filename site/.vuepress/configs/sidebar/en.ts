@@ -1,19 +1,29 @@
-export const en = {
-  '/en/components': [
+import type { SidebarConfig } from '@vuepress/theme-default'
+
+export const sideEn: SidebarConfig = {
+  '/guide/': [
+    {
+      text: 'Guide',
+      children: [
+        '/guide/README.md',
+        '/guide/getting-started.md',
+        '/guide/markdown.md',
+      ],
+    },
+  ],
+  '/components/': [
     {
       text: 'Components',
-      link: '/en/components/',
       children: [
         {
           text: 'MButton',
-          link: '/en/components/button',
-          children: [],
+          link: '/components/button/',
         }
       ]
     },
     {
       text: 'Components2',
-      link: '/en/components/',
+      // link: '/components/',
     }
   ]
 }

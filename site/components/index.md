@@ -1,1 +1,1 @@
-组件预览
+component preview
