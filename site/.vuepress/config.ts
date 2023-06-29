@@ -1,7 +1,6 @@
 import { defineUserConfig, defaultTheme, viteBundler } from 'vuepress'
 import registerComponentsPlugin from '@vuepress/plugin-register-components'
 import { codeBlockPlugin } from '@yanyu-fe/vuepress-plugin-code-block'
-import { searchPlugin } from '@vuepress/plugin-search'
 import { head, navEn, navZh, sideEn, sideZh } from './configs'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import { resolve } from 'path'
