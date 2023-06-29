@@ -1,9 +1,11 @@
 import { defineUserConfig, defaultTheme, viteBundler } from 'vuepress'
-import registerComponentsPlugin from '@vuepress/plugin-register-components'
 import { codeBlockPlugin } from '@yanyu-fe/vuepress-plugin-code-block'
-import { head, navEn, navZh, sideEn, sideZh } from './configs'
+import { getDirname, path } from '@vuepress/utils'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import { resolve } from 'path'
+import { head, navEn, navZh, sideEn, sideZh } from './configs'
+// import { resolve } from 'path'
+
+const __dirname = getDirname(import.meta.url)
 
 export default defineUserConfig({
   // lang: 'zh-CN',
@@ -13,9 +15,6 @@ export default defineUserConfig({
   head,
 	plugins: [
     codeBlockPlugin(),
-    registerComponentsPlugin({
-      componentsDir: resolve(__dirname, './components'),
-    }),
   ],
 	locales: {
     '/': {
@@ -69,11 +68,11 @@ export default defineUserConfig({
 			plugins: [vueJsx()],
 			resolve: {
 				alias: {
-					'@m-f2e/vue3-ui/style': resolve(
+					'@m-f2e/vue3-ui/style': path.resolve(
 						__dirname,
 						'../../packages/components/src/style.ts'
 					),
-					'@m-f2e/vue3-ui': resolve(__dirname, '../../packages/components/src/index.ts'),
+					'@m-f2e/vue3-ui': path.resolve(__dirname, '../../packages/components/src/index.ts'),
 				},
 			},
 			css: {
