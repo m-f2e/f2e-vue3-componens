@@ -15,9 +15,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: |
-        pnpm install --no-frozen-lockfile
-        pnpm build:site
+      - run: pnpm install --no-frozen-lockfile
+      - run: pnpm build:site
       - uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
