@@ -8,7 +8,7 @@ actions:
     link: /guide/getting-started.md
     type: primary
   - text: 项目简介
-    link: guide/
+    link: /guide/
     type: secondary
 features:
   - title: 简洁至上

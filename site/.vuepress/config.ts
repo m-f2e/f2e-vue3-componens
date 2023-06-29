@@ -2,7 +2,7 @@ import { defineUserConfig, defaultTheme, viteBundler } from 'vuepress'
 import { codeBlockPlugin } from '@yanyu-fe/vuepress-plugin-code-block'
 import { getDirname, path } from '@vuepress/utils'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import { head, navEn, navZh, sideEn, sideZh } from './configs'
+import { navEn, navZh, sideEn, sideZh } from './configs'
 // import { resolve } from 'path'
 
 const __dirname = getDirname(import.meta.url)
@@ -12,7 +12,6 @@ export default defineUserConfig({
 	// title: '前端组件库',
   // description: '这是我的第一个 VuePress 站点',
 	base: process.env.NODE_ENV === 'production' ? '/f2e-vue3-componens/' : '/',
-  head,
 	plugins: [
     codeBlockPlugin(),
   ],
